@@ -3,6 +3,12 @@ module.exports = {
     title: `teisenhower.dev`,
     description: `teisenhower.dev`,
     author: `@teisenhower`,
+    social: {
+      twitter: "https://twitter.com/teisenhower",
+      github: "https://github.com/teisenhower",
+      gitlab: "https://gitlab.com/teisenhower",
+      stack: "https://stackoverflow.com/users/11223118/terrence",
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
