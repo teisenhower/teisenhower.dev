@@ -34,6 +34,8 @@ const IndexPage = () => (
         <div id="awesomeButton" className="white">
           Start Awesomeness
         </div>
+      </div>
+      <div id="social">
         <Icon />
       </div>
     </div>
