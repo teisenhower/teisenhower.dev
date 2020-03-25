@@ -8,8 +8,8 @@ const Headshot = () => {
     query {
       fixedImage: file(relativePath: { eq: "headshot.jpg" }) {
         childImageSharp {
-          fixed(width: 672, quality: 100) {
-            ...GatsbyImageSharpFixed_withWebp
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -19,7 +19,7 @@ const Headshot = () => {
   return (
     <div className={style.headshotWrapper}>
       <span className={style.headshotOutline}></span>
-      <Img fixed={data.fixedImage.childImageSharp.fixed} />
+      <Img fluid={data.fixedImage.childImageSharp.fluid} />
     </div>
   )
 }

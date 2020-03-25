@@ -8,23 +8,23 @@ const IndexPage = () => (
   <Layout>
     <Nav />
     <div id="content">
-      <div id="me">
+      <section id="me">
         <h2 id="name" className="white">
           Terrence Eisenhower
         </h2>
         <div id="title" className="orange light">
           Developer <span class="white">//</span> Fly Fisherman
         </div>
-      </div>
-      <div id="headshot">
+      </section>
+      <section id="headshot">
         <Headshot />
-      </div>
-      <div id="welcome" className="align">
+      </section>
+      <section id="welcome" className="align">
         <h1 className="white bold">WELCOME!</h1>
         <h3 className="orange subtitle bold">Thanks for stopping by!</h3>
         <hr></hr>
-      </div>
-      <div id="about" className="align">
+      </section>
+      <section id="about" className="align">
         <p className="white">
           I’m a `<span className="highlight">Full-Stack Developer</span>`. Based
           out of the the great state of Pennsylvania. I started my adventure
@@ -34,10 +34,10 @@ const IndexPage = () => (
         <div id="awesomeButton" className="white">
           Start Awesomeness
         </div>
-      </div>
-      <div id="social">
+      </section>
+      <section id="social">
         <Icon />
-      </div>
+      </section>
     </div>
   </Layout>
 )

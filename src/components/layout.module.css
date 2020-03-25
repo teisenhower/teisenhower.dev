@@ -2,8 +2,18 @@
   width: 60%;
   margin: 0 auto;
 }
+@media (min-width: 2000px) and (max-width: 3000px) {
+  #main {
+    width: 50vw;
+  }
+}
+@media (min-width: 1000px) and (max-width: 2000px) {
+  #main {
+    width: 50vw;
+  }
+}
 @media (max-width: 768px) {
   #main {
-    width: 90%;
+    width: 90vw;
   }
 }
