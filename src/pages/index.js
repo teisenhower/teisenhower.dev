@@ -12,6 +12,11 @@ const IndexPage = () => (
       <meta charSet="utf-8" />
       <title>Terrence Eisenhower - Developer</title>
       <link rel="canonical" href="https://www.teisenhower.dev/" />
+      <meta name="author" content="Terrence Eisenhower" />
+      <meta
+        name="keywords"
+        content="web, developer, development, html, css, js, php, react, gatsby, blog"
+      />
     </Helmet>
     <Layout>
       <Nav />

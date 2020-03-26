@@ -13,6 +13,7 @@
 - Site Title
 - Favicon
 - Gatsby Helmet added to `index.js` for site title and SEO
+- Meta author and keywords added to helmet information
 
 ### Changed
 

@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `teisenhower.dev portfolio and blog site`,
+        short_name: `teisenhower.dev`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#191919`,
