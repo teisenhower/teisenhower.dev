@@ -16,7 +16,7 @@ const Icon = () => {
         }
       }
       allFile(
-        filter: { extension: { eq: "png" } }
+        filter: { relativeDirectory: { eq: "social" } }
         sort: { fields: [name], order: DESC }
       ) {
         edges {

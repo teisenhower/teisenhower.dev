@@ -10,12 +10,17 @@
 - Social icons, Nav and Copyright added to footer
 - Logic to raise and lower footer
 - New `darkGrey` color for footer background
+- Site Title
+- Favicon
+- Gatsby Helmet added to `index.js` for site title and SEO
 
 ### Changed
 
 - Class name added to `TEISENHOWER.DEV` in Nav so it can be hidden when in mobile layout
 - Original `darkGrey` color variable changed to `grey`
 - Top margin removed from `welcome` section, margin added to `main` media query
+- Social icons added to a 'social' folder so they can be queried separately
+  - GraphQL query to grab social icons changed to `relativeDirectory: { eq: "social" }`
 
 ## [0.1.2] - 2020-03-25
 

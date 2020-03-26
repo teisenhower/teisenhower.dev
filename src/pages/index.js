@@ -5,8 +5,14 @@ import Nav from "../components/nav"
 import Headshot from "../components/headshot"
 import Icon from "../components/icon"
 import Footer from "../components/footer"
+import Helmet from "react-helmet"
 const IndexPage = () => (
   <div id="main">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Terrence Eisenhower - Developer</title>
+      <link rel="canonical" href="https://www.teisenhower.dev/" />
+    </Helmet>
     <Layout>
       <Nav />
       <div id="content">
