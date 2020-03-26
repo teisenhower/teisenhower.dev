@@ -3,14 +3,23 @@
 :root {
   font-size: 10px;
   font-family: "Nunito Sans", sans-serif;
-  --darkGrey: 26, 26, 26;
+  --grey: 26, 26, 26;
+  --darkGrey: 18, 18, 18;
   --orange: 230, 127, 13;
+}
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 body {
   margin: 0;
   padding: 0;
   line-height: 2.4rem;
-  background: rgb(var(--darkGrey));
+  background: rgb(var(--grey));
 }
 
 /* nav */
@@ -139,6 +148,48 @@ p {
   line-height: 2.4rem;
 }
 
+/* footer */
+footer {
+  display: none;
+}
+.open {
+  bottom: 0;
+}
+.closed {
+  bottom: calc(-7.2rem - 2px);
+}
+.arrows-open {
+  top: -20px;
+}
+.arrows-closed {
+  top: 20px;
+}
+.bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0.26, -0.01, 0.13, 0.99);
+}
+@keyframes bounce {
+  from {
+    padding-top: 0px;
+  }
+  25% {
+    padding-top: 10px;
+  }
+  50% {
+    padding-top: 0px;
+  }
+  75% {
+    padding-top: 10px;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
 /* media queries */
 @media (min-width: 2000px) and (max-width: 3000px) {
   :root {
@@ -187,7 +238,7 @@ p {
     grid-row-end: 4;
   }
   #welcome {
-    margin: 6rem 0 0 0;
+    /* margin: 6rem 0 0 0; */
     height: 8.4rem;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -216,11 +267,31 @@ p {
   nav {
     display: none;
   }
+  footer {
+    display: block;
+  }
+  footer > nav {
+    display: block;
+    margin: 1.2rem 0 0 0;
+    line-height: 1.2rem;
+  }
+  footer > nav > ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 4.8rem;
+  }
+  footer > nav > ul > li {
+    padding: 0;
+    margin: 0;
+    line-height: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .siteName {
+    display: none;
+  }
   .align {
     text-align: start;
-  }
-  nav {
-    display: none;
   }
   .align {
     text-align: start;

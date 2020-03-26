@@ -1,8 +1,21 @@
 ## [Unreleased]
 
-- Mobile layout started. Social icons need added to footer
 - Make "Start Awesomeness" button functional; connect to email
 - Define better breakpoints in media queries
+
+## [0.1.3] - 2020-03-26
+
+### Added
+
+- Social icons, Nav and Copyright added to footer
+- Logic to raise and lower footer
+- New `darkGrey` color for footer background
+
+### Changed
+
+- Class name added to `TEISENHOWER.DEV` in Nav so it can be hidden when in mobile layout
+- Original `darkGrey` color variable changed to `grey`
+- Top margin removed from `welcome` section, margin added to `main` media query
 
 ## [0.1.2] - 2020-03-25
 

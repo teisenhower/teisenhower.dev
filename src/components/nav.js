@@ -3,7 +3,7 @@ import style from "./nav.module.css"
 const Nav = () => {
   return (
     <nav>
-      <div>TEISENHOWER.DEV</div>
+      <div className="siteName">TEISENHOWER.DEV</div>
       <ul>
         <li>PROJECTS</li>
         <li>ABOUT</li>
