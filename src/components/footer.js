@@ -8,16 +8,15 @@ class Footer extends React.Component {
     super(props)
     this.state = {
       status: "closed",
-      arrow: "up",
     }
   }
   toggleNav() {
-    if (this.state.status == "open") {
+    if (this.state.status === "open") {
       this.setState({
         status: "closed",
       })
     }
-    if (this.state.status == "closed") {
+    if (this.state.status === "closed") {
       this.setState({
         status: "open",
       })

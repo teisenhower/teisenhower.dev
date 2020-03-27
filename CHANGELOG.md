@@ -2,17 +2,27 @@
 
 - Define better breakpoints in media queries
 - Footer needed on desktop layout
+- Sitemap
+- Add contact email to footer
 - Start planning out interaction events for users
+- Change "Start Awesomeness" text to email and animation to "Start Awesomeness" on hover
 
 ## [0.1.4] - 2020-03-27
 
 ### Added
 
 - "Start Awesomeness" functional
+- CSS styling for `<a>` tags in [index.css](./src/pages/index.css)
 
 ### Changed
 
-- "Start Awesomeness" button converted to `<a>` tag for `mailto` ability
+- CHANGELOG updated to use links to files referenced
+- `awesomeButton` border changed to `1px` for mobile layout
+- Homepage paragraph updated to new content. Still not 100% final version
+- Unneeded code removed from [footer.js](./src/components/footer.js)
+- Comparison Operators in `toggleNav()` function in [footer.js](./src/components/footer.js) changed to `===` due to ESLint Warnings on Gatsby build
+- Social icons updated to all be the same size and positioned the same so they are uniform
+- `awesomeButton` converted to `<a>` tag for `mailto` ability
   - `href="mailto:terrence@teisenhower.dev?subject=Awesome%20Project"`
 
 ## [0.1.3] - 2020-03-26
@@ -24,12 +34,12 @@
 - New `darkGrey` color for footer background
 - Site Title
 - Favicon
-- Gatsby Helmet added to `index.js` for site title and SEO
+- Gatsby Helmet added to [index.js](./src/pages/index.js) for site title and SEO
 - Meta author and keywords added to helmet information
 
 ### Changed
 
-- Class name added to `TEISENHOWER.DEV` in Nav so it can be hidden when in mobile layout
+- Class name added to `TEISENHOWER.DEV` in [nav.js](./src/components/nav.js) so it can be hidden when in mobile layout
 - Original `darkGrey` color variable changed to `grey`
 - Top margin removed from `welcome` section, margin added to `main` media query
 - Social icons added to a 'social' folder so they can be queried separately
