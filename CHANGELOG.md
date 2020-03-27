@@ -1,7 +1,19 @@
 ## [Unreleased]
 
-- Make "Start Awesomeness" button functional; connect to email
 - Define better breakpoints in media queries
+- Footer needed on desktop layout
+- Start planning out interaction events for users
+
+## [0.1.4] - 2020-03-27
+
+### Added
+
+- "Start Awesomeness" functional
+
+### Changed
+
+- "Start Awesomeness" button converted to `<a>` tag for `mailto` ability
+  - `href="mailto:terrence@teisenhower.dev?subject=Awesome%20Project"`
 
 ## [0.1.3] - 2020-03-26
 

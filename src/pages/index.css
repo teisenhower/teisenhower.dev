@@ -21,6 +21,10 @@ body {
   line-height: 2.4rem;
   background: rgb(var(--grey));
 }
+a {
+  text-decoration: none;
+  color: unset;
+}
 
 /* nav */
 nav {
@@ -295,5 +299,8 @@ footer {
   }
   .align {
     text-align: start;
+  }
+  #awesomeButton {
+    border: 1px solid rgb(var(--orange));
   }
 }

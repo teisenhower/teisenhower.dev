@@ -39,14 +39,22 @@ const IndexPage = () => (
         </section>
         <section id="about" className="align">
           <p className="white">
-            I’m a `<span className="highlight">Full-Stack Developer</span>`.
-            Based out of the the great state of Pennsylvania. I started my
-            adventure with a degree in graphic design only to stumbled upon the
-            world of development. Have an awesome project idea? Let’s chat!
+            I’m what you would call a `
+            <span className="highlight">Full-Stack Developer</span>`. Simply
+            put, I am a one stop shop for your next big web project. Whether
+            that’s a simple personal blog, eCommerce site for your growing
+            business, or a full fledged web based application. Starting from
+            design all the way through development, I’ve got you covered. Have
+            an awesome project idea in mind or need help with a current project?
+            Let’s hear it!
           </p>
-          <div id="awesomeButton" className="white">
+          <a
+            id="awesomeButton"
+            className="white"
+            href="mailto:terrence@teisenhower.dev?subject=Awesome%20Project"
+          >
             Start Awesomeness
-          </div>
+          </a>
         </section>
         <section id="social">
           <Icon />
