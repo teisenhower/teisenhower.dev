@@ -7,8 +7,14 @@ class Footer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      status: "closed",
+      status: "",
     }
+  }
+  componentDidMount() {
+    let windowWidth = window.innerWidth
+    windowWidth >= 1200
+      ? this.setState({ status: "open" })
+      : this.setState({ status: "closed" })
   }
   toggleNav() {
     if (this.state.status === "open") {
@@ -34,8 +40,8 @@ class Footer extends React.Component {
             <span id={style.arrow} className={style.down}></span>
           </span>
         </span>
-        <Nav />
-        <Icon />
+        <Nav className={style.footerNav} />
+        <Icon className={style.footerIcon} />
         <div id={style.copyright}>
           Copyright &copy; 2020 Terrence Eisenhower All Rights Reserved
         </div>

@@ -1,11 +1,28 @@
 ## [Unreleased]
 
-- Define better breakpoints in media queries
-- Footer needed on desktop layout
 - Sitemap
 - Add contact email to footer
 - Start planning out interaction events for users
-- Change "Start Awesomeness" text to email and animation to "Start Awesomeness" on hover
+
+## [0.1.5] - 2020-03-30
+
+### Added
+
+- Classes on `Nav` and `Icon` components in [footer.js](./src/components/footer.js) so their display can be set to `none` when not on mobile. Classes passed as props
+- Code refactored to display footer on desktop layout without the Nav and Icons included
+- Awesome Button changes from email to "Start Awesomeness" on hover
+
+### Changed
+
+- [footer.js](./src/components/footer.js) now includes `componentDidMount()` function that will set footer to `open` if screen width is larger than `1200px`
+- Copyright font-sized enlarged
+- Footer arrow tab widened on mobile
+- New CSS breakpoints and settings within those breakpoints tweaked to improve layout. Not finalized
+
+### Removed
+
+- `root` font-size change for large screen sizes removed from [index.css](./src/pages/index.css)
+- Unneeded/Duplicate CSS
 
 ## [0.1.4] - 2020-03-27
 

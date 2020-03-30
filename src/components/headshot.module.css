@@ -12,18 +12,17 @@
   margin: 2.4rem 0 0 -2.4rem;
 }
 
-@media (min-width: 2000px) and (max-width: 3000px) {
+@media (max-width: 2000px) {
   .headshotWrapper {
-    /* width: 50.4rem; */
     width: 42rem;
   }
 }
-@media (min-width: 1000px) and (max-width: 2000px) {
+@media (max-width: 1500px) {
   .headshotWrapper {
     width: 33.6rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .headshotWrapper {
     width: 25.2rem;
   }

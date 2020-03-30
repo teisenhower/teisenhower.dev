@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import style from "./icon.module.css"
 
-const Icon = () => {
+const Icon = ({ className }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
       site {
@@ -29,7 +29,7 @@ const Icon = () => {
     }
   `)
   return (
-    <div className={style.socialIcons}>
+    <div className={style.socialIcons + " " + className}>
       {data.allFile.edges.map((file, index) => {
         const { github, stack, gitlab, twitter } = data.site.siteMetadata.social
         let url = eval(file.node.name)

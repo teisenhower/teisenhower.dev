@@ -53,7 +53,10 @@ const IndexPage = () => (
             className="white"
             href="mailto:terrence@teisenhower.dev?subject=Awesome%20Project"
           >
-            Start Awesomeness
+            <div id="awesomeSwitch">
+              <div>terrence@teisenhower.dev</div>
+              <div>Start Awesomeness</div>
+            </div>
           </a>
         </section>
         <section id="social">

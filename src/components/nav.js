@@ -1,8 +1,8 @@
 import React from "react"
 import style from "./nav.module.css"
-const Nav = () => {
+const Nav = ({ className }) => {
   return (
-    <nav>
+    <nav className={className}>
       <div className="siteName">TEISENHOWER.DEV</div>
       <ul>
         <li>PROJECTS</li>

@@ -5,16 +5,16 @@ footer > * {
 }
 footer {
   position: fixed;
-  height: 7.2rem;
+  height: 4.8rem;
   width: 100vw;
   border-style: solid;
-  border-width: 1px 0 0 0;
+  border-width: 0 0 0 0;
   transition: all cubic-bezier(0.26, -0.01, 0.13, 0.99) 0.5s;
 }
 #tab {
-  width: 9.6rem;
+  width: 14.4rem;
   height: 2.4rem;
-  display: flex;
+  display: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%) translateY(-99%);
@@ -26,10 +26,11 @@ footer {
   overflow: hidden;
 }
 #copyright {
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
-  font-size: 0.8rem;
   line-height: 1.2rem;
+  margin: 1.2rem 0 0 0;
 }
 #arrow {
   border: solid rgb(var(--orange));
@@ -48,4 +49,25 @@ footer {
 }
 .down {
   transform: rotate(45deg);
+}
+.footerNav,
+.footerIcon {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .footerNav {
+    display: block;
+  }
+  footer {
+    height: 7.2rem;
+    border-width: 1px 0 0 0;
+  }
+  #tab {
+    display: flex;
+  }
+  #copyright {
+    font-size: 1rem;
+    margin: 0;
+  }
 }
