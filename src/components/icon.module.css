@@ -1,12 +1,30 @@
 .socialIcons {
-  padding: 4.8rem 0 0 0;
+  padding: 2.4rem 0 0 0;
 }
 .socialIcon {
-  margin: 0 0 0 4.8rem;
-  width: 3.6rem;
+  margin: 0 0 0 2.4rem;
+  width: 2.4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .socialIcons {
     display: none;
+  }
+  .socialIcons > a {
+    justify-self: center;
+  }
+  footer > .socialIcons {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1.2rem);
+    grid-gap: 1.2rem;
+    grid-template-rows: 1.2rem;
+    justify-content: center;
+    line-height: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .socialIcon {
+    width: 1.2rem;
+    margin: 0;
   }
 }

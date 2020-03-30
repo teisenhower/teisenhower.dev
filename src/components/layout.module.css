@@ -1,9 +1,25 @@
 #main {
-  width: 60%;
+  width: 50vw;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 2000px) {
   #main {
-    width: 90%;
+    width: 50vw;
+  }
+}
+@media (max-width: 1600px) {
+  #main {
+    width: 60vw;
+  }
+}
+@media (max-width: 1200px) {
+  #main {
+    width: 65vw;
+    margin: 6rem auto 14.4rem auto;
+  }
+}
+@media (max-width: 900px) {
+  #main {
+    width: 90vw;
   }
 }
