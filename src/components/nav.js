@@ -1,9 +1,9 @@
 import React from "react"
 import style from "./nav.module.css"
-const Nav = () => {
+const Nav = ({ className }) => {
   return (
-    <nav>
-      <div>TEISENHOWER.DEV</div>
+    <nav className={className}>
+      <div className="siteName">TEISENHOWER.DEV</div>
       <ul>
         <li>PROJECTS</li>
         <li>ABOUT</li>
