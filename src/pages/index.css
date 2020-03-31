@@ -69,9 +69,14 @@ li {
 .center {
   text-align: center;
 }
+.alpha {
+  animation-name: alpha;
+  animation-duration: 1s;
+}
 
 /* homepage */
 #name {
+  position: relative;
   padding: 0;
   margin: 0;
   font-size: 1.8rem;
@@ -126,6 +131,9 @@ hr {
   display: inline-block;
   right: 0px;
   margin: 0 0 2.4rem 0;
+  animation-name: barGrow;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.26, -0.01, 0.13, 0.99);
 }
 h1 {
   font-size: 4.8rem;
@@ -166,6 +174,8 @@ p {
   width: inherit;
   top: 0;
   width: 100%;
+  animation-name: buttonIn;
+  animation-duration: 0.75s;
 }
 #awesomeSwitch > * {
   line-height: 2.4rem;
@@ -209,6 +219,30 @@ p {
   }
   to {
     padding-top: 0px;
+  }
+}
+@keyframes barGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 4.8rem;
+  }
+}
+@keyframes alpha {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes buttonIn {
+  from {
+    top: 2.4rem;
+  }
+  to {
+    top: 0;
   }
 }
 
@@ -277,7 +311,8 @@ p {
   }
   hr {
     margin: 0 0 1.2rem 0;
-    width: 9.6rem;
+    animation-name: barGrow;
+    animation-duration: 1s;
   }
   #awesomeButton {
     justify-self: start;

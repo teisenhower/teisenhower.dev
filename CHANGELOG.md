@@ -12,6 +12,10 @@
 ### Added
 
 - Google Analytics using `gatsby-plugin-google-analytics`
+- Some slight animations have been added
+  - Dissolve text and icons
+  - Headshot outline
+  - Divider bar
 
 ### Changed
 

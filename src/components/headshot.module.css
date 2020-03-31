@@ -10,6 +10,9 @@
   height: 100%;
   outline: 2px solid rgb(var(--orange));
   margin: 2.4rem 0 0 -2.4rem;
+  animation-name: outlineGrow;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.26, -0.01, 0.13, 0.99);
 }
 
 @media (max-width: 2000px) {
@@ -28,5 +31,19 @@
   }
   .headshotOutline {
     margin: 1.2rem 0 0 -1.2rem;
+  }
+}
+
+@keyframes outlineGrow {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  to {
+    clip-path: polygon(
+      calc(0% - 4px) calc(0% - 4px),
+      calc(100% + 4px) calc(0% - 4px),
+      calc(100% + 4px) calc(100% + 4px),
+      calc(0% - 4px) calc(100% + 4px)
+    );
   }
 }

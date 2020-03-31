@@ -29,7 +29,7 @@ const Icon = ({ className }) => {
     }
   `)
   return (
-    <div className={style.socialIcons + " " + className}>
+    <div className={style.socialIcons + " alpha " + className}>
       {data.allFile.edges.map((file, index) => {
         const { github, stack, gitlab, twitter } = data.site.siteMetadata.social
         let url = eval(file.node.name)

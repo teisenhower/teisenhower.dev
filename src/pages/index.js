@@ -20,7 +20,7 @@ const IndexPage = () => (
     </Helmet>
     <Layout>
       <div id="content">
-        <section id="me">
+        <section id="me" className="alpha">
           <h2 id="name" className="white">
             Terrence Eisenhower
           </h2>
@@ -32,12 +32,14 @@ const IndexPage = () => (
           <Headshot />
         </section>
         <section id="welcome" className="align">
-          <h1 className="white bold">WELCOME!</h1>
-          <h3 className="orange subtitle bold">Thanks for stopping by!</h3>
+          <h1 className="white bold alpha">WELCOME!</h1>
+          <h3 className="orange subtitle bold alpha">
+            Thanks for stopping by!
+          </h3>
           <hr></hr>
         </section>
         <section id="about" className="align">
-          <p className="white">
+          <p className="white alpha">
             I’m what you would call a `
             <span className="highlight">Full-Stack Developer</span>`. Simply
             put, I am a one stop shop for your next big web project. Whether
