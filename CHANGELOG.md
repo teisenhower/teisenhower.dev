@@ -4,6 +4,13 @@
 - Add contact email to footer
 - Start planning out interaction events for users
 
+## [0.1.6] - 2020-03-31
+
+### Added
+
+- [404](./src/pages/404.js)
+- Font weight `200` _extra light_ for 404 page
+
 ## [0.1.5] - 2020-03-30
 
 ### Added

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600&display=swap");
 
 :root {
   font-size: 10px;
@@ -65,6 +65,9 @@ li {
 }
 .align {
   text-align: end;
+}
+.center {
+  text-align: center;
 }
 
 /* homepage */
@@ -154,6 +157,7 @@ p {
   line-height: 2.4rem;
   height: 2.4rem;
   overflow: hidden;
+  display: block;
 }
 #awesomeSwitch {
   position: relative;

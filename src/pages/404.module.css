@@ -1,0 +1,33 @@
+.error {
+  font-size: 14.4rem;
+  line-height: 14.4rem;
+  font-weight: 200;
+}
+#square {
+  display: inline-block;
+  position: relative;
+  width: 9.6rem;
+  height: 9.6rem;
+  outline-offset: -6px;
+  outline: 6px solid rgb(var(--orange));
+}
+.fourohfour {
+  width: max-content;
+  margin: 12rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.errorMessage {
+  margin: 0;
+  font-size: 1.2rem;
+}
+#backButton {
+  align-self: center;
+  margin: 2.4rem 0;
+  padding: 0 2.4rem;
+  font-size: 1.4rem;
+  border: 2px solid rgb(var(--orange));
+  letter-spacing: 1px;
+  line-height: 2.4rem;
+  height: 2.4rem;
+}
