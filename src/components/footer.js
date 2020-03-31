@@ -7,15 +7,20 @@ class Footer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      status: "",
+      status: "open",
     }
   }
   componentDidMount() {
     let windowWidth = window.innerWidth
-    windowWidth >= 1200
-      ? this.setState({ status: "open" })
-      : this.setState({ status: "closed" })
+    if (windowWidth <= 1200) {
+      setTimeout(() => {
+        this.setState({
+          status: "closed",
+        })
+      }, 2000)
+    }
   }
+
   toggleNav() {
     if (this.state.status === "open") {
       this.setState({
@@ -28,6 +33,7 @@ class Footer extends React.Component {
       })
     }
   }
+
   render() {
     return (
       <footer className={this.state.status}>

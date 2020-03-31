@@ -189,7 +189,7 @@ p {
 .bounce {
   animation-name: bounce;
   animation-duration: 1s;
-  animation-delay: 2s;
+  animation-delay: 3s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-timing-function: cubic-bezier(0.26, -0.01, 0.13, 0.99);

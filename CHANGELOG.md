@@ -16,8 +16,8 @@
 ### Changed
 
 - Since this is the soft launch version, the blog and projects pages are not included. Because of this, the nav has been removed from this version
-
 - The Social Icons in the footer have been enlarged to accommodate for this missing nav
+- Footer modified so if on mobile the footer is open for 2 seconds then closes. The hope is this will alert users to interact with this element.
 
 ## [0.1.6] - 2020-03-31
 
