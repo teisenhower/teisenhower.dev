@@ -40,7 +40,6 @@ class Footer extends React.Component {
             <span id={style.arrow} className={style.down}></span>
           </span>
         </span>
-        <Nav className={style.footerNav} />
         <Icon className={style.footerIcon} />
         <div id={style.copyright}>
           Copyright &copy; 2020 Terrence Eisenhower All Rights Reserved

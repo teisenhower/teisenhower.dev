@@ -3,6 +3,21 @@
 - Sitemap
 - Add contact email to footer
 - Start planning out interaction events for users
+- Footer shows in middle of screen before page fully loads. Due to `open` class not being on footer, may need to update `componentDidMount()`
+
+## [0.1.6 - soft launch] - 2020-03-31
+
+#### This version is using branch "launch"
+
+### Added
+
+- Google Analytics using `gatsby-plugin-google-analytics`
+
+### Changed
+
+- Since this is the soft launch version, the blog and projects pages are not included. Because of this, the nav has been removed from this version
+
+- The Social Icons in the footer have been enlarged to accommodate for this missing nav
 
 ## [0.1.6] - 2020-03-31
 

@@ -19,7 +19,6 @@ const IndexPage = () => (
       />
     </Helmet>
     <Layout>
-      <Nav />
       <div id="content">
         <section id="me">
           <h2 id="name" className="white">

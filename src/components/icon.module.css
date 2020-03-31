@@ -13,18 +13,18 @@
     justify-self: center;
   }
   footer > .socialIcons {
-    margin: 0;
+    margin: 1.2rem 0 0 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1.2rem);
-    grid-gap: 1.2rem;
-    grid-template-rows: 1.2rem;
+    grid-template-columns: repeat(4, 2.4rem);
+    grid-gap: 2.4rem;
+    grid-template-rows: 2.4rem;
     justify-content: center;
-    line-height: 1.2rem;
+    line-height: 2.4rem;
     padding-bottom: 1.2rem;
   }
   .socialIcon {
-    width: 1.2rem;
+    width: 2.4rem;
     margin: 0;
   }
 }
