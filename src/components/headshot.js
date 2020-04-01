@@ -6,7 +6,7 @@ import style from "./headshot.module.css"
 const Headshot = () => {
   const data = useStaticQuery(graphql`
     query {
-      fixedImage: file(relativePath: { eq: "headshot.jpg" }) {
+      fixedImage: file(relativePath: { eq: "images/headshot.jpg" }) {
         childImageSharp {
           fluid(quality: 100) {
             ...GatsbyImageSharpFluid_withWebp

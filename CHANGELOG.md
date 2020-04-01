@@ -1,9 +1,41 @@
 ## [Unreleased]
 
+- Hover effects on Nav items
+- Indicator on Nav showing which page you're currently on
+- Refine CSS grid spacing for Blog Items
+- Look into using S3 to host blog images
 - Sitemap
 - Add contact email to footer
 - Start planning out interaction events for users
-- Footer shows in middle of screen before page fully loads. Due to `open` class not being on footer, may need to update `componentDidMount()`
+
+## [Bugs]
+
+- Footer Nav comes back up when you switch pages
+- Need to add Home link to Footer Nav when on page other than Home
+
+## [0.1.7 - soft launch] - 2020-04-01
+
+### Added
+
+- Blog page added. Pulling and displaying Markdown data from `post` directory. Installed `gatsby-transformer-remark`
+- Footer added to Blog page
+
+### Changed
+
+- [gatsby-config](./gatsby-config.js) `gatsby-source-filesystem` plugin updated so its path is set to `src` not `images`. Headshot and Icon GraphQL queries needed updated
+- ID added to homepage paragraph so all `<p>` elements weren't inheriting its style - `#mainParagraph`
+- Links added to Nav
+
+### Fixed
+
+- Issue of footer starting in middle of screen
+
+### New Files
+
+- [blog.js](./src/pages/blog.js)
+- [blog.module.css](./src/pages/blog.module.css)
+- [blogItem.js](./src/components/blogItem.js)
+- [blogItem.module.css](./src/components/blogItem.module.css)
 
 ## [0.1.6 - soft launch] - 2020-03-31
 
