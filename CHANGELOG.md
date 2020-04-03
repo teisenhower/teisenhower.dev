@@ -13,6 +13,19 @@
 - Footer Nav comes back up when you switch pages
 - Need to add Home link to Footer Nav when on page other than Home
 
+## [0.1.8 - soft launch] - 2020-04-02
+
+### Added
+
+- Installed `gatsby-source-s3` in order to pull in images from my S3 bucket
+- Added environment variables for AWS keys
+
+### Changed
+
+- GraphQL query in [blog.js](./src/pages/blog.js) updated in order to pull images from S3 Bucket and process them
+- Image in [blogItem.js](./src/components/blogItem.js) updated from `<img>` tag to a Gatsby `<Img>` component
+- `.map()` in [blog.js](./src/pages/blog.js) updated to pass the new images data from the new GraphQL query
+
 ## [0.1.7 - soft launch] - 2020-04-01
 
 ### Added

@@ -1,13 +1,20 @@
 import React from "react"
-import dummyImage from "../images/dummyImage.png"
 import Style from "./blogItem.module.css"
-export default ({ data, index }) => {
+import Img from "gatsby-image"
+
+export default ({ images, data, index }) => {
   const { title, date, thumbnail } = data.frontmatter
   return (
     <div id={index} className={Style.postItem}>
       <div className={Style.blogImageWrapper}>
         <span className={Style.blogImageOutline}></span>
-        <img className={Style.blogImage} src={dummyImage} />
+        <Img
+          className={Style.blogImage}
+          fluid={
+            images[images.findIndex(i => i.node.Key == thumbnail)].node.file
+              .image.fluid
+          }
+        />
       </div>
       <div className="orange">{date}</div>
       <p className={Style.blogTitle + " white bold"}>{title}</p>

@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env`,
+})
 module.exports = {
   siteMetadata: {
     title: `teisenhower.dev`,
@@ -42,6 +45,16 @@ module.exports = {
         head: true,
         // Setting this parameter is also optional
         respectDNT: true,
+      },
+    },
+    {
+      resolve: "gatsby-source-s3",
+      options: {
+        aws: {
+          accessKeyId: process.env.keyID,
+          secretAccessKey: process.env.secretKey,
+        },
+        buckets: ["teisenhower.dev-test2"],
       },
     },
   ],
