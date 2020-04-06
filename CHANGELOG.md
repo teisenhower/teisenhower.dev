@@ -1,9 +1,9 @@
 ## [Unreleased]
 
 - Hover effects on Nav items
+- Hover effects on blog posts
 - Indicator on Nav showing which page you're currently on
 - Refine CSS grid spacing for Blog Items
-- Look into using S3 to host blog images
 - Sitemap
 - Add contact email to footer
 - Start planning out interaction events for users
@@ -12,6 +12,31 @@
 
 - Footer Nav comes back up when you switch pages
 - Need to add Home link to Footer Nav when on page other than Home
+- Content shifts to the left when a scrollbar is needed
+
+## [0.1.10 - soft launch] - 2020-04-06
+
+### Added
+
+- Prismjs added for syntax highlighting `gatsby-remark-prismjs` `prismjs`
+- [gatsby-browser.js](gatsby-browser.js) added to include the Prismjs css file [prism-tomorrow.css](https://github.com/PrismJS/prism/blob/1d5047df37aacc900f8270b1c6215028f6988eb1/themes/prism-tomorrow.css)
+- Changed the default [prism-tomorrow.css](https://github.com/PrismJS/prism/blob/1d5047df37aacc900f8270b1c6215028f6988eb1/themes/prism-tomorrow.css) slightly. Made background my color grey and put an orange border-left to follow my design.
+
+### Changed
+
+- Click location to blog posts changed from their titles to the images
+- Dates changed to `longdate` format. Still using numbered dates for ordering posts
+
+## [0.1.9 - soft launch] - 2020-04-03
+
+### Added
+
+- Logic added to create blog pages from data; `createPages`
+- Logic added to create slugs for blog posts; `onCreateNode`
+- Links added to BlogItems to Post
+- Slug field added to [blog.js](./src/pages/blog.js) GraphQL query
+- Blog Post template added; [blogPost.js](./src/templates/blogPost.js)
+- [index.css](./src/pages/index.css) updated so elements such as h tags and lists are no longer being globally styled. Markdown renders were inheriting these styles.
 
 ## [0.1.8 - soft launch] - 2020-04-02
 

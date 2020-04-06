@@ -33,7 +33,7 @@ const IndexPage = () => (
           <Headshot />
         </section>
         <section id="welcome" className="align">
-          <h1 className="white bold alpha">WELCOME!</h1>
+          <h1 className="welcome white bold alpha">WELCOME!</h1>
           <h3 className="orange subtitle bold alpha">
             Thanks for stopping by!
           </h3>

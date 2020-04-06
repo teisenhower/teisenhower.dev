@@ -34,6 +34,10 @@ export const query = graphql`
             title
             date
             thumbnail
+            longdate
+          }
+          fields {
+            slug
           }
         }
       }

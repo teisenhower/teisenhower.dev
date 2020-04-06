@@ -70,5 +70,6 @@ yarn-error.log
 
 #posts
 posts/
-#dummyImage
-src/images/dummyImage.png
+
+#vscode settigns
+.vscode/
