@@ -58,3 +58,6 @@ pre[class*="language-"] {
   background: rgb(var(--darkGrey));
   border-left: 2px solid rgb(var(--orange));
 }
+:not(pre) > code[class*="language-text"] {
+  border: unset;
+}

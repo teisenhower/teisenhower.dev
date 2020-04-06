@@ -1,16 +1,14 @@
 ## [Unreleased]
 
-- Hover effects on Nav items
 - Hover effects on blog posts
-- Indicator on Nav showing which page you're currently on
 - Refine CSS grid spacing for Blog Items
 - Sitemap
 - Add contact email to footer
 - Start planning out interaction events for users
+- Markdown css updates
 
 ## [Bugs]
 
-- Footer Nav comes back up when you switch pages
 - Need to add Home link to Footer Nav when on page other than Home
 - Content shifts to the left when a scrollbar is needed
 
@@ -21,11 +19,17 @@
 - Prismjs added for syntax highlighting `gatsby-remark-prismjs` `prismjs`
 - [gatsby-browser.js](gatsby-browser.js) added to include the Prismjs css file [prism-tomorrow.css](https://github.com/PrismJS/prism/blob/1d5047df37aacc900f8270b1c6215028f6988eb1/themes/prism-tomorrow.css)
 - Changed the default [prism-tomorrow.css](https://github.com/PrismJS/prism/blob/1d5047df37aacc900f8270b1c6215028f6988eb1/themes/prism-tomorrow.css) slightly. Made background my color grey and put an orange border-left to follow my design.
+- Custom scroll bar styling
+- Hover effects on Nav items. Underline follow
 
 ### Changed
 
 - Click location to blog posts changed from their titles to the images
 - Dates changed to `longdate` format. Still using numbered dates for ordering posts
+
+## Fixed
+
+- Footer Nav open on each page load. Using Local Storage to set value if a user has been to the site before. Only shows open on load if no value set.
 
 ## [0.1.9 - soft launch] - 2020-04-03
 

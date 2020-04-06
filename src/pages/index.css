@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600&display=swap");
-
+::-webkit-scrollbar {
+  width: 2px;
+  background: rgb(var(--darkGrey));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--orange));
+}
 :root {
   font-size: 10px;
   font-family: "Nunito Sans", sans-serif;
@@ -20,6 +26,7 @@ body {
   padding: 0;
   line-height: 2.4rem;
   background: rgb(var(--grey));
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -58,7 +65,22 @@ nav > ul > li {
   display: inline;
   padding: 0 0 0 4.8rem;
 }
-
+.navUnderline {
+  opacity: 0;
+  transition: all cubic-bezier(0.26, -0.01, 0.13, 0.99) 0.25s;
+  border-bottom: 1px solid rgb(var(--orange));
+  position: absolute;
+  top: 0;
+  background: white;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.navUnderline.active {
+  opacity: 1;
+}
 /* attributes */
 .white {
   color: white;
@@ -271,6 +293,9 @@ hr {
   }
 }
 @media (max-width: 1200px) {
+  .navUnderline {
+    display: none;
+  }
   .welcome {
     font-size: 3.6rem;
     margin: 0 0 1.2rem 0;

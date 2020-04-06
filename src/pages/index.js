@@ -6,6 +6,7 @@ import Headshot from "../components/headshot"
 import Icon from "../components/icon"
 import Footer from "../components/footer"
 import Helmet from "react-helmet"
+
 const IndexPage = () => (
   <div id="main">
     <Helmet>

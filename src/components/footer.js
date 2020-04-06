@@ -7,17 +7,32 @@ class Footer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      status: "open",
+      status: "",
     }
   }
   componentDidMount() {
+    const history = JSON.parse(localStorage.getItem("footerNav"))
+    if (history) {
+      this.setState({
+        status: "closed",
+      })
+    } else {
+      this.setState({
+        status: "open",
+      })
+    }
     let windowWidth = window.innerWidth
-    if (windowWidth <= 1200) {
+    if (windowWidth <= 1200 && !history) {
       setTimeout(() => {
         this.setState({
           status: "closed",
         })
       }, 2000)
+    }
+    if (windowWidth > 1200) {
+      this.setState({
+        status: "open",
+      })
     }
   }
 
