@@ -6,6 +6,7 @@ import Headshot from "../components/headshot"
 import Icon from "../components/icon"
 import Footer from "../components/footer"
 import Helmet from "react-helmet"
+
 const IndexPage = () => (
   <div id="main">
     <Helmet>
@@ -19,27 +20,28 @@ const IndexPage = () => (
       />
     </Helmet>
     <Layout>
+      <Nav />
       <div id="content">
         <section id="me" className="alpha">
           <h2 id="name" className="white">
             Terrence Eisenhower
           </h2>
           <div id="title" className="orange light">
-            Developer <span class="white">//</span> Fly Fisherman
+            Developer <span className="white">//</span> Fly Fisherman
           </div>
         </section>
         <section id="headshot">
           <Headshot />
         </section>
         <section id="welcome" className="align">
-          <h1 className="white bold alpha">WELCOME!</h1>
+          <h1 className="welcome white bold alpha">WELCOME!</h1>
           <h3 className="orange subtitle bold alpha">
             Thanks for stopping by!
           </h3>
           <hr></hr>
         </section>
         <section id="about" className="align">
-          <p className="white alpha">
+          <p id="mainParagraph" className="white alpha">
             I’m what you would call a `
             <span className="highlight">Full-Stack Developer</span>`. Simply
             put, I am a one stop shop for your next big web project. Whether

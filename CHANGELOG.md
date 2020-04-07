@@ -1,9 +1,83 @@
 ## [Unreleased]
 
+- Hover effects on blog posts
+- Refine CSS grid spacing for Blog Items
 - Sitemap
 - Add contact email to footer
 - Start planning out interaction events for users
-- Footer shows in middle of screen before page fully loads. Due to `open` class not being on footer, may need to update `componentDidMount()`
+- Markdown css updates
+
+## [Bugs]
+
+- Need to add Home link to Footer Nav when on page other than Home
+- Content shifts to the left when a scrollbar is needed
+
+## [0.1.10 - soft launch] - 2020-04-06
+
+### Added
+
+- Prismjs added for syntax highlighting `gatsby-remark-prismjs` `prismjs`
+- [gatsby-browser.js](gatsby-browser.js) added to include the Prismjs css file [prism-tomorrow.css](https://github.com/PrismJS/prism/blob/1d5047df37aacc900f8270b1c6215028f6988eb1/themes/prism-tomorrow.css)
+- Changed the default [prism-tomorrow.css](https://github.com/PrismJS/prism/blob/1d5047df37aacc900f8270b1c6215028f6988eb1/themes/prism-tomorrow.css) slightly. Made background my color grey and put an orange border-left to follow my design.
+- Custom scroll bar styling
+- Hover effects on Nav items. Underline follow
+
+### Changed
+
+- Click location to blog posts changed from their titles to the images
+- Dates changed to `longdate` format. Still using numbered dates for ordering posts
+
+## Fixed
+
+- Footer Nav open on each page load. Using Local Storage to set value if a user has been to the site before. Only shows open on load if no value set.
+
+## [0.1.9 - soft launch] - 2020-04-03
+
+### Added
+
+- Logic added to create blog pages from data; `createPages`
+- Logic added to create slugs for blog posts; `onCreateNode`
+- Links added to BlogItems to Post
+- Slug field added to [blog.js](./src/pages/blog.js) GraphQL query
+- Blog Post template added; [blogPost.js](./src/templates/blogPost.js)
+- [index.css](./src/pages/index.css) updated so elements such as h tags and lists are no longer being globally styled. Markdown renders were inheriting these styles.
+
+## [0.1.8 - soft launch] - 2020-04-02
+
+### Added
+
+- Installed `gatsby-source-s3` in order to pull in images from my S3 bucket
+- Added environment variables for AWS keys
+
+### Changed
+
+- GraphQL query in [blog.js](./src/pages/blog.js) updated in order to pull images from S3 Bucket and process them
+- Image in [blogItem.js](./src/components/blogItem.js) updated from `<img>` tag to a Gatsby `<Img>` component
+- `.map()` in [blog.js](./src/pages/blog.js) updated to pass the new images data from the new GraphQL query
+
+## [0.1.7 - soft launch] - 2020-04-01
+
+### Added
+
+- Blog page added. Pulling and displaying Markdown data from `post` directory. Installed `gatsby-transformer-remark`
+- Footer added to Blog page
+
+### Changed
+
+- [gatsby-config](./gatsby-config.js) `gatsby-source-filesystem` plugin updated so its path is set to `src` not `images`. Headshot and Icon GraphQL queries needed updated
+- ID added to homepage paragraph so all `<p>` elements weren't inheriting its style - `#mainParagraph`
+- Links added to Nav
+
+### Fixed
+
+- Issue of footer starting in middle of screen
+
+### New Files
+
+- [blog.js](./src/pages/blog.js)
+- [blog.module.css](./src/pages/blog.module.css)
+- [blogItem.js](./src/components/blogItem.js)
+- [blogItem.module.css](./src/components/blogItem.module.css)
 
 ## [0.1.6 - soft launch] - 2020-03-31
 

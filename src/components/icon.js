@@ -4,7 +4,7 @@ import style from "./icon.module.css"
 
 const Icon = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query {
       site {
         siteMetadata {
           social {
@@ -16,7 +16,7 @@ const Icon = ({ className }) => {
         }
       }
       allFile(
-        filter: { relativeDirectory: { eq: "social" } }
+        filter: { relativeDirectory: { eq: "images/social" } }
         sort: { fields: [name], order: DESC }
       ) {
         edges {
@@ -34,7 +34,7 @@ const Icon = ({ className }) => {
         const { github, stack, gitlab, twitter } = data.site.siteMetadata.social
         let url = eval(file.node.name)
         return (
-          <a href={url} target="_blank" rel="noopener noreferrer">
+          <a key={index} href={url} target="_blank" rel="noopener noreferrer">
             <img
               className={style.socialIcon}
               key={`social-${index}`}
