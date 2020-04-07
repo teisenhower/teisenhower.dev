@@ -1,7 +1,11 @@
+![t-icons](https://s3.amazonaws.com/teisenhower.dev-test2/assets/T-icon.png)
+
 # teisenhower.dev
 
-## Introduction
+Personal portfolio and blog
 
-Repo for the new [teisenhower.dev](https://www.teisenhower.dev/)
+## Uses
 
-This site is currently being built using [React](https://reactjs.org/) and utilizes [Gatsby](https://www.gatsbyjs.org/)
+- [React](https://reactjs.org/)
+- [Gatsby](https://www.gatsbyjs.org/)
+- [MD](https://daringfireball.net/projects/markdown/)
