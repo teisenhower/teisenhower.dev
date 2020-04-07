@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600&display=swap");
 ::-webkit-scrollbar {
   width: 2px;
+  height: 4px;
   background: rgb(var(--darkGrey));
 }
 ::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb:vertical {
   background: rgb(var(--orange));
 }
+::-webkit-scrollbar-thumb:horizontal {
+  background: rgb(var(--orange));
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 0 4px;
+}
+
 :root {
   font-size: 10px;
   font-family: "Nunito Sans", sans-serif;
