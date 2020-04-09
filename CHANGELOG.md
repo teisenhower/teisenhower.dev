@@ -21,6 +21,10 @@
 - Wrote content for both About and Services pages
 - Home link to both footer and header navs
 
+### Changed
+
+- .gitignore updated to now include `posts` files. Needed to build phase
+
 ## [0.1.10 - soft launch] - 2020-04-06
 
 ### Added

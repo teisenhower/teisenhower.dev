@@ -2,8 +2,6 @@ import React from "react"
 // import style from "./nav.module.css"
 import { Link } from "gatsby"
 const Nav = ({ className }) => {
-  console.log(className)
-
   return (
     <nav className={className}>
       <div className="siteName">
