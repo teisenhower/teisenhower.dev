@@ -6,11 +6,20 @@
 - Add contact email to footer
 - Start planning out interaction events for users
 - Markdown css updates
+- Refactor CSS
+- Need to add downloadable resume
 
 ## [Bugs]
 
-- Need to add Home link to Footer Nav when on page other than Home
 - Content shifts to the left when a scrollbar is needed
+
+## [0.1.11 - soft launch] - 2020-04-09
+
+### Added
+
+- Services page
+- Wrote content for both About and Services pages
+- Home link to both footer and header navs
 
 ## [0.1.10 - soft launch] - 2020-04-06
 
