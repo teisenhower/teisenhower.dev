@@ -47,7 +47,7 @@ export default () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <em>(Needs a logo? I know a guy for that..)</em>
+                    <em>(Need a logo? I know a guy for that..)</em>
                   </a>
                 </span>{" "}
                 All designs are responsive for mobile friendliness. Did you

@@ -1,5 +1,4 @@
 import React from "react"
-// import style from "./nav.module.css"
 import { Link } from "gatsby"
 const Nav = ({ className }) => {
   return (
