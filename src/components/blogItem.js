@@ -14,7 +14,7 @@ export default ({ images, data, index }) => {
           <Img
             className={Style.blogImage}
             fluid={
-              images[images.findIndex(i => i.node.Key == thumbnail)].node.file
+              images[images.findIndex(i => i.node.Key === thumbnail)].node.file
                 .image.fluid
             }
           />

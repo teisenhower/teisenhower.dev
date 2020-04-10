@@ -33,7 +33,7 @@ exports.onInitialClientRender = () => {
   underline.classList.add("navUnderline")
   document.body.append(underline)
   const items = JSON.parse(localStorage.getItem("footerNav")) || []
-  if (items.length == 0) {
+  if (items.length === 0) {
     const item = {
       history: true,
     }
