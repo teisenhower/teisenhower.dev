@@ -140,7 +140,9 @@ export default () => {
               Ready to start your on your next big project?
             </h2>
             <h3 id={Style.email} className="orange">
-              terrence@teisenhower.dev
+              <a href="mailto:terrence@teisenhower.dev?subject=Awesome%20Project">
+                terrence@teisenhower.dev
+              </a>
             </h3>
           </section>
           <section id={Style.questions}>
