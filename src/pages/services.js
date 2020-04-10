@@ -130,10 +130,10 @@ export default () => {
               </span>
               .
             </p>
-            <p className="white">
+            {/* <p className="white">
               For a more detailed overview of my credentials please download a
               free copy of my <span className="bold highlight">resume</span>.
-            </p>
+            </p> */}
           </section>
           <section id={Style.cta}>
             <h2 className="white bold">
