@@ -47,7 +47,7 @@ export default () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <em>(Need a logo? I know a guy for that..)</em>
+                    <em>(Need branding? I know a guy for that)</em>
                   </a>
                 </span>{" "}
                 All designs are responsive for mobile friendliness. Did you
@@ -58,11 +58,11 @@ export default () => {
             <div id="performance">
               <h2 className="orange bold">Performace</h2>
               <p className="white">
-                Performance is also a big factor. I take great care and pride in
-                ensuring all projects are extremely efficient resulting in fast
-                load speeds creating a stress free experience for your users.
-                This also gains you a boost in SEO performance, the thing that
-                helps potential clients find you.
+                Performance is also a big factor. I take great care and pride
+                ensuring that all my projects are extremely efficient resulting
+                in fast load speeds creating a stress free experience for your
+                users. This also gains you a boost in SEO performance.{" "}
+                <em>(The thing that helps potential clients find you.)</em>
               </p>
             </div>
           </div>
@@ -72,9 +72,9 @@ export default () => {
             </h2>
             <p className="white">
               I can cover that as well. I have worked on several WordPress
-              projects creating custom themes from scratch. No templates that
-              other sites have, ensuring that your project is truly authentic
-              and totally yours.
+              projects creating custom themes from scratch. Not based on
+              templates that other sites may have, ensuring that your project is
+              truly authentic and totally yours.
             </p>
           </section>
           <section>
@@ -88,8 +88,8 @@ export default () => {
               Nitty-Gritty Nerdy Details For The Technical Folks
             </h2>
             <p className="white">
-              I am knowledgeable in several languages, to name the relevant
-              ones. <span className="orange">PHP</span>,{" "}
+              I am knowledgeable in several languages;{" "}
+              <span className="orange">PHP</span>,{" "}
               <span className="orange">Javascript</span>,{" "}
               <span className="orange">C++</span> and of course{" "}
               <span className="orange">HTML</span> and{" "}
@@ -114,9 +114,9 @@ export default () => {
               <span className="orange">Maria</span>.
             </p>
             <p className="white">
-              Worked with Cloud Technologies such as{" "}
+              Work with Cloud Technologies such as{" "}
               <span className="orange">AWS</span>. I have two projects currently
-              utilizing AWS, this site you’re currently enjoying for my hosting
+              utilizing AWS. This site you’re currently enjoying for my hosting
               and asset storage and the site I built for{" "}
               <span className="highlight">
                 {" "}

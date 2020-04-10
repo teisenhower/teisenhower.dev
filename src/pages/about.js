@@ -30,14 +30,16 @@ export default () => {
           </p>
           <p className="white">
             While in college I had two courses that looking back on them now
-            should have been a turning point in my career. Web design and a
-            course devoted to Flash. I remember during my web design course
-            being really intrigued about the world of web. I enjoyed seeing what
-            combinations of HTML and CSS I needed in order to create what I had
-            sketched down on my overpriced notepad from the school store. Prior
-            to this I had some insight into this HTML and CSS world all thanks
-            to the social platform, MySpace. I am sure a lot of the developers
-            today could attest to the same.
+            should have been a turning point in my career. A course on web
+            design{" "}
+            <em>(strictly on basic HTML and CSS using Adobe Dreamweaver)</em>{" "}
+            and a course entirely devoted to Flash. I remember during my web
+            design course being really intrigued about the world of web. I
+            enjoyed seeing what combinations of HTML and CSS I needed in order
+            to create what I had sketched down on my overpriced notepad from the
+            school store. Prior to this I had some insight into this HTML and
+            CSS world all thanks to the social platform, MySpace. I am sure a
+            lot of the developers today could attest to the same.
           </p>
           <p className="white">
             Then in my Flash course, I was introduced to ActionScript. I was
