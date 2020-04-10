@@ -18,7 +18,9 @@ export default () => {
             more about me..
           </p>
           <hr></hr>
-          <h2 className={Style.heading + " white bold"}>The Overview</h2>
+          <h2 className={Style.heading + " white bold"}>
+            Let me formally introduce myself
+          </h2>
           <p className="white">
             My name is Terrence Eisenhower. I am from York, Pennsylvania. More
             specifically a little town called Wrightsville. I graduated from

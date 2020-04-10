@@ -54,7 +54,7 @@ module.exports = {
           accessKeyId: process.env.keyID,
           secretAccessKey: process.env.secretKey,
         },
-        buckets: ["teisenhower.dev-test2"],
+        buckets: ["teisenhower.dev"],
       },
     },
     {
