@@ -5,12 +5,34 @@ import Footer from "../components/footer"
 import Nav from "../components/nav"
 import Img from "gatsby-image"
 import Style from "./blogPost.module.css"
+import Helmet from "react-helmet"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   const images = data.images.edges
   return (
     <div id="main">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Terrence Eisenhower - Developer</title>
+        <link rel="canonical" href="https://www.teisenhower.dev/" />
+        <meta name="author" content="Terrence Eisenhower" />
+        <meta
+          name="keywords"
+          content="web, developer, development, html, css, js, php, react, gatsby, blog"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@teisenhower" />
+        <meta name="twitter:title" content={post.frontmatter.title} />
+        <meta name="twitter:description" content={post.frontmatter.excerpt} />
+        <meta
+          name="twitter:image"
+          content={
+            "https://s3.amazonaws.com/teisenhower.dev/" +
+            post.frontmatter.thumbnail
+          }
+        />
+      </Helmet>
       <Layout>
         <Nav />
         <div className={Style.blogImageWrapper}>
@@ -52,6 +74,7 @@ export const query = graphql`
         date
         longdate
       }
+      excerpt
     }
     images: allS3Image {
       edges {
