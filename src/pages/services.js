@@ -132,7 +132,17 @@ export default () => {
             </p>
             {/* <p className="white">
               For a more detailed overview of my credentials please download a
-              free copy of my <span className="bold highlight">resume</span>.
+              free copy of my{" "}
+              <span className="bold highlight">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://s3.amazonaws.com/teisenhower.dev/Terrence+Eisenhower+Resume.pdf"
+                >
+                  resume
+                </a>
+              </span>
+              .
             </p> */}
           </section>
           <section id={Style.cta}>

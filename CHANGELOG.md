@@ -1,4 +1,4 @@
-## [Unreleased]
+## Unreleased
 
 - Hover effects on blog posts
 - Refine CSS grid spacing for Blog Items
@@ -9,9 +9,28 @@
 - Refactor CSS
 - Need to add downloadable resume
 
-## [Bugs]
+## [0.2.1] - 2020-04-23
 
-- Content shifts to the left when a scrollbar is needed
+## Added
+
+- New blog post. gatsby-source-s3
+
+## Changed
+
+- Updated some CSS in the blog posts. Was not looking that great once it was full with code blocks
+
+## Fixed
+
+- Removed CSS in index that would have prevented users from copying text from the blog posts `user-select: none;`
+- Query to source S3 images update to allow a max width of 1500px. Default is 800px which was causing images on large screens to look blurry
+
+## [0.2.0] - 2020-04-10
+
+v0.2.0 is now deployed version. This version features the new services, about and blog pages.
+
+## Changed
+
+- S3 bucket changed to production bucket
 
 ## [0.1.11 - soft launch] - 2020-04-09
 

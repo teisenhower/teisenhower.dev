@@ -19,7 +19,7 @@ export default () => {
           </p>
           <hr></hr>
           <h2 className={Style.heading + " white bold"}>
-            Let me formally introduce myself
+            Allow me to reintroduce myself.... Jay-Z anyone?
           </h2>
           <p className="white">
             My name is Terrence Eisenhower. I am from York, Pennsylvania. More
