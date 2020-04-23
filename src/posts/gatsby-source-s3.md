@@ -8,7 +8,7 @@ keywords: "gatsby, react, aws, "
 
 ## gatsby-source-s3, what is it?
 
-[gatsby-source-s3](https://www.gatsbyjs.org/packages/gatsby-source-s3/) is a plugin that enables you to access your AWS S3 Bucket and query the assets within it using [GraphQL](https://graphql.org/). Cool, so why use this? For me, I am using this alongside [gatsby-transformer-sharp](https://www.gatsbyjs.org/packages/gatsby-transformer-sharp) and [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/), when combined these enables me to import images from my bucket directly into my project and then process them for this blog. I can compress images, convert them to .webp and serve them to devices that support it, along with much more.
+[gatsby-source-s3](https://www.gatsbyjs.org/packages/gatsby-source-s3/) is a plugin that enables you to access your AWS S3 Bucket and query the assets within it using [GraphQL](https://graphql.org/). Cool, so why use this? For me, I am using this alongside [gatsby-transformer-sharp](https://www.gatsbyjs.org/packages/gatsby-transformer-sharp) and [gatsby-source-filesystem](https://www.gatsbyjs.org/packages/gatsby-source-filesystem/), when combined these enable me to import images from my bucket directly into my project and then process them for this blog. I can compress images, convert them to .webp and serve them to devices that support it, along with much more.
 
 In this walk-through, we will solely focus on getting you to successfully query your S3 Bucket and return all the assets within it.
 
