@@ -9,6 +9,12 @@
 - Refactor CSS
 - Need to add downloadable resume
 
+## [0.2.2] - 2020-05-08
+
+## Changed
+
+- Updated README
+
 ## [0.2.1] - 2020-04-23
 
 ## Added
