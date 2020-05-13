@@ -6,6 +6,7 @@ import Nav from "../components/nav"
 import Img from "gatsby-image"
 import Style from "./blogPost.module.css"
 import Helmet from "react-helmet"
+import Newsletter from "../components/newsletter"
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -59,6 +60,10 @@ export default ({ data }) => {
           className="white"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
+        <section id={Style.newsletter}>
+          <h3>Subscribe to the newsletter!</h3>
+          <Newsletter />
+        </section>
       </Layout>
       <Footer />
     </div>

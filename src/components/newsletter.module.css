@@ -1,0 +1,28 @@
+#submitButton {
+  padding: 0 2.4rem;
+  font-size: 1.2rem;
+  border: 2px solid rgb(var(--orange));
+  letter-spacing: 1px;
+  line-height: 2.4rem;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+}
+#emailInput {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  margin: 1.2rem 0 1.2rem 0;
+  letter-spacing: 0.5px;
+  width: 20rem;
+  border: none;
+  padding: 0 4px;
+}
+#message {
+  color: rgb(var(--orange));
+  font-size: 1.4rem;
+  margin: 1.2rem 0 0 0;
+}
+#message > a {
+  text-decoration: underline;
+}

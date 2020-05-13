@@ -3,7 +3,8 @@
   justify-content: space-between;
   margin: 3.6rem 0 2.4rem 0;
 }
-#blogPost {
+#blogPost,
+form {
   margin: 0 0 9.6rem 0;
 }
 .blogTitle {
@@ -80,6 +81,24 @@ pre[class*="language-"] {
 }
 :not(pre) > code[class*="language-text"] {
   border: unset;
+}
+
+#newsletter h3 {
+  color: white;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+}
+#submitButton {
+  justify-self: end;
+  margin: 2.4rem 0 0 0;
+  padding: 0 2.4rem;
+  font-size: 1.4rem;
+  border: 2px solid rgb(var(--orange));
+  letter-spacing: 1px;
+  line-height: 2.4rem;
+  height: 2.4rem;
+  overflow: hidden;
+  display: block;
 }
 
 @media (max-width: 900px) {

@@ -9,6 +9,13 @@
 - Refactor CSS
 - Need to add downloadable resume
 
+## [0.2.3] - 2020-05-13
+
+## Added
+
+- Newsletter signup form added to bottom of blog posts template
+- `gatsby-plugin-mailchimp` added
+
 ## [0.2.2] - 2020-05-08
 
 ## Changed
