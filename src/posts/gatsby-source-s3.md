@@ -288,6 +288,4 @@ Thanks!
 
 <br>
 
-### Photo Credit
-
-### Header photo by [Nils Schirmer](https://unsplash.com/nilsschirmer) on Unsplash
+#### Header photo by [Nils Schirmer](https://unsplash.com/nilsschirmer) on Unsplash

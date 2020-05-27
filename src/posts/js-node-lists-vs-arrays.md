@@ -53,6 +53,4 @@ So there you have it. How NodeLists differ from Arrays and how you can quickly c
 
 Reach out to me via [Twitter](https://twitter.com/teisenhower)! Happy to help out!
 
-### Photo Credit
-
-### Header photo by [Faris Mohammed](https://unsplash.com/pkmfaris) on Unsplash
+#### Header photo by [Faris Mohammed](https://unsplash.com/pkmfaris) on Unsplash

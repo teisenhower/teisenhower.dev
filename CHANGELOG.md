@@ -9,6 +9,14 @@
 - Refactor CSS
 - Need to add downloadable resume
 
+## [0.2.4] - 2020-05-27
+
+## Added
+
+- New Post - Using State in React. Class-Based vs Functional Components
+- h3 styling added for blog posts
+- font size on blog items reduced to 16px (`1.6rem`)
+
 ## [0.2.3] - 2020-05-13
 
 ## Added
