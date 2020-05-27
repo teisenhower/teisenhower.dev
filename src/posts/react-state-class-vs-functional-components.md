@@ -8,8 +8,6 @@ keywords: "react, javascript, js, state"
 
 In this article, using simple examples I hope to explain the basics of how you can use state within the two different types of components in [React](https://reactjs.org/).
 
-<!-- ## Types of components in React -->
-
 As the title may have given away, within React we have Class-Based and Functional components. While both of these types will ultimately render your component, how you define and mutate your state within these types is different.
 
 ## Class-Based Components
@@ -49,8 +47,6 @@ export default ClassBasedComponent
 ### Defining State
 
 How we define state inside of a Class-Based component is by using the reserved keyword `state` and assigning it a value. This value is a [Javascript object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) and it represents our initial state. There is nothing fancy or special about this object. We can store any type of data we want within this object; arrays, booleans, integers, etc., just like with objects outside of React
-
-<!-- Just because this object is being used to hold our state doesn't mean anything. We can use any type of data we want; arrays, booleans, integers, etc., just like with object outside of React. -->
 
 Within the body of our class but outside of the `render` method, I'm going to define our `state` and set a single property, `fontColor` and assign it the value red.
 
