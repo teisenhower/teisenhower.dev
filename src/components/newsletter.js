@@ -1,15 +1,15 @@
-import React from "react"
-import addToMailchimp from "gatsby-plugin-mailchimp"
-import Style from "./newsletter.module.css"
+import React from 'react'
+import addToMailchimp from 'gatsby-plugin-mailchimp'
+import Style from './newsletter.module.css'
 
 function Newsletter() {
-  const [email, setEmail] = React.useState("")
-  const [message, setMessage] = React.useState("")
-  const handleUpdate = e => {
+  const [email, setEmail] = React.useState('')
+  const [message, setMessage] = React.useState('')
+  const handleUpdate = (e) => {
     e.preventDefault()
     setEmail(e.target.value)
   }
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault()
     addToMailchimp(email).then(({ msg }) => {
       setMessage(msg)
@@ -30,7 +30,7 @@ function Newsletter() {
         <div
           id={Style.message}
           dangerouslySetInnerHTML={{ __html: message }}
-        ></div>
+        />
       )}
     </form>
   )

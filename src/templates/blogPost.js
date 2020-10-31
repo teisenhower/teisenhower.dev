@@ -1,16 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import Footer from "../components/footer"
-import Nav from "../components/nav"
-import Img from "gatsby-image"
-import Style from "./blogPost.module.css"
-import Helmet from "react-helmet"
-import Newsletter from "../components/newsletter"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
+import Layout from '../components/layout'
+import Nav from '../components/nav'
+import Style from './blogPost.module.css'
+import Newsletter from '../components/newsletter'
 
 export default ({ data }) => {
   const post = data.markdownRemark
-  const images = data.images.edges
   return (
     <div id="main">
       <Helmet>
@@ -26,35 +23,17 @@ export default ({ data }) => {
         <meta name="twitter:site" content="@teisenhower" />
         <meta name="twitter:title" content={post.frontmatter.title} />
         <meta name="twitter:description" content={post.frontmatter.excerpt} />
-        <meta
-          name="twitter:image"
-          content={
-            "https://s3.amazonaws.com/teisenhower.dev/" +
-            post.frontmatter.thumbnail
-          }
-        />
       </Helmet>
       <Layout>
         <Nav />
-        <div className={Style.blogImageWrapper}>
-          <span className={Style.blogImageOutline}></span>
-          <Img
-            className={Style.headerImage}
-            fluid={
-              images[
-                images.findIndex(i => i.node.Key === post.frontmatter.thumbnail)
-              ].node.file.image.fluid
-            }
-          />
-        </div>
         <div id={Style.header}>
-          <h1 className={Style.blogTitle + " white"}>
+          <h1 className={`${Style.blogTitle} white`}>
             {post.frontmatter.title}
           </h1>
-          <h1 className={Style.blogDate + " orange"}>
-            {post.frontmatter.longdate}
-          </h1>
         </div>
+        <h4 className={`${Style.blogDate} orange`}>
+          {post.frontmatter.longdate}
+        </h4>
         <div
           id={Style.blogPost}
           className="white"
@@ -65,7 +44,6 @@ export default ({ data }) => {
           <Newsletter />
         </section>
       </Layout>
-      <Footer />
     </div>
   )
 }
@@ -75,25 +53,10 @@ export const query = graphql`
       html
       frontmatter {
         title
-        thumbnail
         date
         longdate
       }
       excerpt
-    }
-    images: allS3Image {
-      edges {
-        node {
-          file: localFile {
-            image: childImageSharp {
-              fluid(quality: 100, maxWidth: 1500) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
-          }
-          Key
-        }
-      }
     }
   }
 `

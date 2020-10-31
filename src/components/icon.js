@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import style from "./icon.module.css"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import style from './icon.module.css'
 
-const Icon = ({ className }) => {
+const Icon = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -10,7 +10,6 @@ const Icon = ({ className }) => {
           social {
             github
             stack
-            gitlab
             twitter
           }
         }
@@ -29,10 +28,10 @@ const Icon = ({ className }) => {
     }
   `)
   return (
-    <div className={style.socialIcons + " alpha " + className}>
+    <div>
       {data.allFile.edges.map((file, index) => {
-        const { github, stack, gitlab, twitter } = data.site.siteMetadata.social
-        let url = eval(file.node.name)
+        const { github, stack, twitter } = data.site.siteMetadata.social
+        const url = eval(file.node.name)
         return (
           <a key={index} href={url} target="_blank" rel="noopener noreferrer">
             <img
@@ -40,7 +39,7 @@ const Icon = ({ className }) => {
               key={`social-${index}`}
               src={`${file.node.publicURL}`}
               alt={`${file.node.name}-logo`}
-            ></img>
+            />
           </a>
         )
       })}

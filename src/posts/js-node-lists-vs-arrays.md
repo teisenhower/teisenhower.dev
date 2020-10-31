@@ -2,7 +2,6 @@
 title: "NodeList VS Array - How to convert a NodeList to an Array"
 longdate: "May 15, 2020"
 date: "2020-05-15"
-thumbnail: "js-node-lists-vs-arrays.png"
 keywords: "nodelist, array, array.from, spread, operator, javascript, js"
 ---
 
@@ -52,5 +51,3 @@ So there you have it. How NodeLists differ from Arrays and how you can quickly c
 ## Need help?
 
 Reach out to me via [Twitter](https://twitter.com/teisenhower)! Happy to help out!
-
-#### Header photo by [Faris Mohammed](https://unsplash.com/pkmfaris) on Unsplash

@@ -1,26 +1,14 @@
-import React from "react"
-import { Link } from "gatsby"
-const Nav = ({ className }) => {
-  return (
-    <nav className={className}>
-      <div className="siteName">
-        <Link to="/">TEISENHOWER.DEV</Link>
-      </div>
-      <ul>
-        <li>
-          <Link to="/">HOME</Link>
-        </li>
-        <li>
-          <Link to="/services">SERVICES</Link>
-        </li>
-        <li>
-          <Link to="/about">ABOUT</Link>
-        </li>
-        <li>
-          <Link to="/blog">BLOG</Link>
-        </li>
-      </ul>
-    </nav>
-  )
-}
+import React from 'react'
+import { Link } from 'gatsby'
+import Style from './nav.module.css'
+import Icons from './icon'
+
+const Nav = () => (
+  <nav className="alpha">
+    <Link id={Style.teisenhower} to="/">
+      @teisenhower
+    </Link>
+    <Icons />
+  </nav>
+)
 export default Nav

@@ -1,48 +1,31 @@
 #header {
   display: flex;
   justify-content: space-between;
-  margin: 3.6rem 0 2.4rem 0;
+  margin: 3.6rem 0 1.2rem 0;
 }
 #blogPost,
 form {
   margin: 0 0 9.6rem 0;
 }
 .blogTitle {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   letter-spacing: 0;
-  line-height: 2.4rem;
-  max-width: 50vw;
+  line-height: 3.6rem;
 }
 .blogDate {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: 0;
   line-height: 2.4rem;
-}
-.headerImage {
-  margin: 7.2rem 0 0 0;
-  height: 16.8rem;
-}
-.blogImageWrapper {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.blogImageOutline {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  outline: 2px solid rgb(var(--orange));
-  margin: 1.2rem 0 0 -1.2rem;
+  margin-bottom: 2.4rem;
 }
 #blogPost h2 {
   font-size: 2.4rem;
   padding-top: 2.4rem;
   line-height: 4.8rem;
-  border-bottom: 1px solid rgb(var(--orange));
+  /* border-bottom: 1px solid rgb(var(--orange)); */
   width: max-content;
   max-width: 100vw;
+  color: rgb(var(--orange));
 }
 #blogPost h3 {
   font-size: 1.6rem;
@@ -55,6 +38,7 @@ form {
   color: white;
   font-size: 1.6rem;
   margin: 1.2rem 0;
+  font-weight: 300;
 }
 #blogPost a {
   color: rgb(var(--orange));
@@ -74,6 +58,8 @@ form {
 }
 code[class*="language-"] {
   font-size: 1.6rem;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
 }
 #blogPost > ul,
 ol > li {
@@ -113,16 +99,15 @@ pre[class*="language-"] {
     font-size: 1.8rem;
     padding-top: 2.4rem;
     line-height: 2.4rem;
-    width: max-content;
-    max-width: 100vw;
+    width: 100%;
   }
   code[class*="language-"] {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   #blogPost p {
     font-size: 1.4rem;
   }
   .blogTitle {
-    max-width: 50vw;
+    font-size: 2.4rem;
   }
 }

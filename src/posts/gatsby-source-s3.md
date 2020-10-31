@@ -2,7 +2,6 @@
 title: "How to use gatsby-source-s3 in your next Gatsby project"
 longdate: "April 23rd, 2020"
 date: "2020-04-23"
-thumbnail: "aws-gatsby-source-s3.png"
 keywords: "gatsby, react, aws, "
 ---
 
@@ -285,7 +284,3 @@ Hopefully this returned some data for you. Here is an example of what that retur
 If you run into any issues or questions please feel free to reach out to me via [Twitter](https://twitter.com/teisenhower). I am more than happy to help.
 
 Thanks!
-
-<br>
-
-#### Header photo by [Nils Schirmer](https://unsplash.com/nilsschirmer) on Unsplash

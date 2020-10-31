@@ -2,7 +2,6 @@
 title: "Destructuring Objects and Arrays in Javascript"
 longdate: "May 13, 2020"
 date: "2020-05-13"
-thumbnail: "js-destructuring.png"
 keywords: "javascript, destructuring, js, object, arrays"
 ---
 
@@ -241,5 +240,3 @@ console.log(bestBuy)
 Like always, if you ran into any issues or questions feel free to reach out to me via [Twitter](https://twitter.com/teisenhower) and I'll be happy to help!
 
 Thanks!
-
-#### Header photo by [Iker Urteaga](https://unsplash.com/@iurte) on Unsplash

@@ -2,7 +2,6 @@
 title: "Using State in React. Class-Based vs Functional Components"
 longdate: "May 27, 2020"
 date: "2020-05-27"
-thumbnail: "react-state-class-vs-functional.png"
 keywords: "react, javascript, js, state"
 ---
 
@@ -426,5 +425,3 @@ As I was writing this I felt that certain areas deserved a little more detail an
 And like always, if you ran into any issues, questions or there is something I missed. Please feel free to reach out to me via [Twitter](https://twitter.com/teisenhower) and I'll be happy to help!
 
 Thanks!
-
-#### Header photo by [Carson Arias](https://unsplash.com/carsonarias) on Unsplash
