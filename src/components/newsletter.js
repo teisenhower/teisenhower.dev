@@ -5,11 +5,11 @@ import Style from './newsletter.module.css'
 function Newsletter() {
   const [email, setEmail] = React.useState('')
   const [message, setMessage] = React.useState('')
-  const handleUpdate = (e) => {
+  const handleUpdate = e => {
     e.preventDefault()
     setEmail(e.target.value)
   }
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault()
     addToMailchimp(email).then(({ msg }) => {
       setMessage(msg)

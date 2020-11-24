@@ -3,6 +3,23 @@
 - css refactor
 - Fix linting errors and warnings
 
+## [2.0.1] - 2020-11-02
+
+### Added
+
+- `dotenv` package
+
+### Removed
+
+- Underline functions in gatsby-browser.js
+- blog.js
+
+### Changed
+
+- No longer using index as key within `.map`
+- Rules added to .eslint
+- Rules updated in .prettierrc
+
 ## [2.0.0] - 2020-10-31
 
 ##### Change Is Coming....

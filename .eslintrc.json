@@ -5,7 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb"        
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -19,6 +19,9 @@
     ],
     "rules": {
         "semi": [1, "never"],
-        "quotes": [2, "single"]
+        "quotes": [2, "single"],
+        "arrow-parens": [1, "as-needed"],
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "arrow-body-style": [1, "always"]
     }
 }

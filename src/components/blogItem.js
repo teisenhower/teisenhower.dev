@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Style from './blogItem.module.css'
 
-export default ({ data, index }) => {
+const BlogItem = ({ data, index }) => {
   const { title, longdate } = data.frontmatter
   const { slug } = data.fields
   return (
@@ -15,3 +15,5 @@ export default ({ data, index }) => {
     </div>
   )
 }
+
+export default BlogItem

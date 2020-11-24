@@ -7,28 +7,36 @@ import BlogItem from '../components/blogItem'
 import Style from './blog.module.css'
 import Nav from '../components/nav'
 
-const IndexPage = ({ data }) => (
-  <div id="main">
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>Terrence Eisenhower - Developer</title>
-      <link rel="canonical" href="https://www.teisenhower.dev/" />
-      <meta name="author" content="Terrence Eisenhower" />
-      <meta
-        name="keywords"
-        content="web, developer, development, html, css, js, php, react, gatsby, blog"
-      />
-    </Helmet>
-    <Layout>
-      <Nav />
-      <div id={Style.posts}>
-        {data.allMarkdownRemark.edges.map(({ node }, index) => (
-          <BlogItem key={index} data={node} index={index} />
-        ))}
-      </div>
-    </Layout>
-  </div>
-)
+const IndexPage = ({ data }) => {
+  return (
+    <div id="main">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Terrence Eisenhower - Developer</title>
+        <link rel="canonical" href="https://www.teisenhower.dev/" />
+        <meta name="author" content="Terrence Eisenhower" />
+        <meta
+          name="keywords"
+          content="web, developer, development, html, css, js, php, react, gatsby, blog"
+        />
+      </Helmet>
+      <Layout>
+        <Nav />
+        <div id={Style.posts}>
+          {data.allMarkdownRemark.edges.map(({ node }, index) => {
+            return (
+              <BlogItem
+                key={node.frontmatter.title}
+                data={node}
+                index={index}
+              />
+            )
+          })}
+        </div>
+      </Layout>
+    </div>
+  )
+}
 
 export default IndexPage
 

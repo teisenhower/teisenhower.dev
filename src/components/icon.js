@@ -27,16 +27,21 @@ const Icon = () => {
       }
     }
   `)
+  const links = data.site.siteMetadata.social
   return (
     <div>
-      {data.allFile.edges.map((file, index) => {
-        const { github, stack, twitter } = data.site.siteMetadata.social
-        const url = eval(file.node.name)
+      {data.allFile.edges.map(file => {
+        const url = links[file.node.name]
         return (
-          <a key={index} href={url} target="_blank" rel="noopener noreferrer">
+          <a
+            key={file.node.name}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               className={style.socialIcon}
-              key={`social-${index}`}
+              key={file.node.name}
               src={`${file.node.publicURL}`}
               alt={`${file.node.name}-logo`}
             />
