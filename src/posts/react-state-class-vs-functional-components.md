@@ -1,8 +1,8 @@
 ---
-title: "Using State in React. Class-Based vs Functional Components"
-longdate: "May 27, 2020"
-date: "2020-05-27"
-keywords: "react, javascript, js, state"
+title: 'Using State in React. Class-Based vs Functional Components'
+longdate: 'May 27, 2020'
+date: '2020-05-27'
+keywords: 'react, javascript, js, state, reactjs, components'
 ---
 
 In this article, using simple examples I hope to explain the basics of how you can use state within the two different types of components in [React](https://reactjs.org/).
@@ -22,7 +22,7 @@ You will see these Class-Based components defined 1 of 2 ways.
 1. By importing the `Component` class along with React
 
 ```jsx
-import React, { Component } from "react"
+import React, { Component } from 'react'
 class ClassBasedComponent extends Component {
   render() {
     return <h1>I'm a Class-Based Component</h1>
@@ -34,7 +34,7 @@ export default ClassBasedComponent
 2. Or you can just import React by itself and gain access to the `Component` class by using `React.Component`
 
 ```jsx
-import React from "react"
+import React from 'react'
 class ClassBasedComponent extends React.Component {
   render() {
     return <h1>I'm a Class-Based Component</h1>
@@ -50,10 +50,10 @@ How we define state inside of a Class-Based component is by using the reserved k
 Within the body of our class but outside of the `render` method, I'm going to define our `state` and set a single property, `fontColor` and assign it the value red.
 
 ```jsx
-import React, { Component } from "react"
+import React, { Component } from 'react'
 class ClassBasedComponent extends Component {
   state = {
-    fontColor: "red",
+    fontColor: 'red',
   }
   render() {
     return <h1>I'm a Class-Based Component</h1>
@@ -67,10 +67,10 @@ We can then use this `fontColor` property to style our `<h1>` using an inline-st
 > There are other ways of styling your React components, this method is just simpler for these examples.
 
 ```jsx
-import React, { Component } from "react"
+import React, { Component } from 'react'
 class ClassBasedComponent extends Component {
   state = {
-    fontColor: "red",
+    fontColor: 'red',
   }
   render() {
     const style = {
@@ -95,7 +95,7 @@ When you start your dev server, you should now see this component rendered to yo
 When we want to change something in our state _(mutate it)_, you may have heard people say, "don't mutate your state directly". This means for example, we wouldn't want to do something like this.
 
 ```jsx
-this.state.fontColor = "green"
+this.state.fontColor = 'green'
 ```
 
 React will not acknowledge this and will also give you a console warning. To properly mutate our state, we instead want to use a method that is made available to us via the `Component` class we discussed earlier. This method is called `setState`.
@@ -107,14 +107,14 @@ Let's now add a method _(function)_ to our component and call it `changeColor`. 
 This method will go inside the body of our class but outside the `render` method. We need to use `this.setState` since we are referring to our class which contains the `setState` method.
 
 ```jsx
-import React, { Component } from "react"
+import React, { Component } from 'react'
 class ClassBasedComponent extends Component {
   state = {
-    fontColor: "red",
+    fontColor: 'red',
   }
   changeColor = () => {
     this.setState({
-      fontColor: "green",
+      fontColor: 'green',
     })
   }
   render() {
@@ -172,7 +172,7 @@ You may also see these types defined in multiple ways. The two most common ways 
 
 ```jsx
 // Regular Function
-import React from "react"
+import React from 'react'
 function FunctionalComponent() {
   return <h1>I'm a Functional Component</h1>
 }
@@ -183,7 +183,7 @@ export default FunctionalComponent
 
 ```jsx
 // Arrow Function
-import React from "react"
+import React from 'react'
 const FunctionalComponent = () => {
   return <h1>I'm a Functional Component</h1>
 }
@@ -201,7 +201,7 @@ We first need access to this `useState` hook. This can be done in much the same 
 1. By importing `useState` along with React
 
 ```jsx
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 const FunctionalComponent = () => {
   return <h1>I'm a Functional Component</h1>
@@ -231,25 +231,25 @@ These are all valid state definitions using `useState`
 
 ```jsx
 // string
-useState("red")
+useState('red')
 // integer
 useState(100)
 // boolean
 useState(true)
 // object
 useState({
-  fontColor: "red",
+  fontColor: 'red',
 })
 ```
 
 For consistency, I will continue using an object with the `fontColor` property and setting its initial state to red. I will also import `useState` instead of using `React.useState`.
 
 ```jsx
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 const FunctionalComponent = () => {
   useState({
-    fontColor: "red",
+    fontColor: 'red',
   })
   return <h1>I'm a Functional Component</h1>
 }
@@ -268,11 +268,11 @@ These elements are returned in the form of an array. This allows us to take adva
 Let's update our code slightly to destructure our `useState`.
 
 ```jsx
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 const FunctionalComponent = () => {
   const [myState, setMyState] = useState({
-    fontColor: "red",
+    fontColor: 'red',
   })
   return <h1>I'm a Functional Component</h1>
 }
@@ -288,11 +288,11 @@ Now that our state is defined, let's use it to make our `<h1>` red, just like we
 Our `style` constant should be inside of our function body but outside of our return statement.
 
 ```jsx
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 const FunctionalComponent = () => {
   const [myState, setMyState] = useState({
-    fontColor: "red",
+    fontColor: 'red',
   })
   const style = {
     color: myState.fontColor,
@@ -309,10 +309,10 @@ If however we had decided to use a string for our color instead of an object, th
 We pass `useState` a string, "red". Then to pull this information from our state we can just use the variable `myState` which contains our string, "red".
 
 ```jsx
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 const FunctionalComponent = () => {
-  const [myState, setMyState] = useState("red")
+  const [myState, setMyState] = useState('red')
   const style = {
     color: myState,
   }
@@ -336,18 +336,18 @@ Let's create a function and call it `changeColor` just like before. The syntax t
 Let's also add our button needed to call this function.
 
 ```jsx
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
 const FunctionalComponent = () => {
   const [myState, setMyState] = useState({
-    fontColor: "red",
+    fontColor: 'red',
   })
   const style = {
     color: myState.fontColor,
   }
   const changeColor = () => {
     setMyState({
-      fontColor: "green",
+      fontColor: 'green',
     })
   }
   return (
@@ -409,7 +409,7 @@ So to avoid either sending redundant data to `useState` or having our data delet
 
 ```jsx
 const [myColor, setMyColor] = useState({
-  fontColor: "red",
+  fontColor: 'red',
 })
 const [myWeight, setMyWeight] = useState({
   fontWeight: 600,

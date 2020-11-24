@@ -1,8 +1,8 @@
 ---
 title: "My 'Hello World'"
-longdate: "April 10th, 2020"
-date: "2020-04-10"
-keywords: "gatsby, react, aws, "
+longdate: 'April 10th, 2020'
+date: '2020-04-10'
+keywords: 'gatsby, react, aws, graphql'
 ---
 
 Throughout the entirety of building this site, in the back of my head I’ve been contemplating “What will my first post be about? It needs to be great, attention grabbing and informative.” I started jotting down topics and planning tutorials that I’d like to write about. Things that I felt would both interest and help others.

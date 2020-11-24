@@ -1,8 +1,8 @@
 ---
-title: "How to use gatsby-source-s3 in your next Gatsby project"
-longdate: "April 23rd, 2020"
-date: "2020-04-23"
-keywords: "gatsby, react, aws, "
+title: 'How to use gatsby-source-s3 in your next Gatsby project'
+longdate: 'April 23rd, 2020'
+date: '2020-04-23'
+keywords: 'gatsby, react, aws,'
 ---
 
 ## gatsby-source-s3, what is it?
@@ -112,14 +112,14 @@ Your `gatsby-config.js` should now look something like this.
 module.exports = {
   plugins: [
     {
-      resolve: "gatsby-source-s3",
+      resolve: 'gatsby-source-s3',
       options: {
         aws: {
           //   leave these empty for now
-          accessKeyId: "",
-          secretAccessKey: "",
+          accessKeyId: '',
+          secretAccessKey: '',
         },
-        buckets: ["bucket-name"],
+        buckets: ['bucket-name'],
       },
     },
   ],
@@ -173,18 +173,18 @@ In order to give `gatsby-source-s3` access to our keys, we use a package that is
 In order to utilize this package, we again need to first tell Gatsby to use it. This is again done by adding it to our `gatsby-config.js`. However, we won't be adding it in the same way we did our `gatsby-source-s3` plugin. Here we want to `require` it at the **very top of our file**.
 
 ```javascript
-require("dotenv").config()
+require('dotenv').config()
 module.exports = {
   plugins: [
     {
-      resolve: "gatsby-source-s3",
+      resolve: 'gatsby-source-s3',
       options: {
         aws: {
           //   leave these empty for now
-          accessKeyId: "",
-          secretAccessKey: "",
+          accessKeyId: '',
+          secretAccessKey: '',
         },
-        buckets: ["bucket-name"],
+        buckets: ['bucket-name'],
       },
     },
   ],
@@ -194,7 +194,7 @@ module.exports = {
 If you named your file `.env` like I did above, this is all you need to do. However, if you decided to name your file something else like, `.env.aws`, `.env.dev` or `env.local`, _(which is totally fine if you did)_ then you are going to have to do a little more work. You need to tell `dotenv` to look for that specific file. You do that by setting the path parameter equal to the location and name of your file.
 
 ```javascript
-require("dotenv").config({
+require('dotenv').config({
   path: `your-file.env`,
 })
 ```
@@ -206,17 +206,17 @@ Going back to our `gatsby-source-s3` settings, we can now access these keys by a
 Your `gatsby-config.js` should now look something like this
 
 ```javascript
-require("dotenv").config()
+require('dotenv').config()
 module.exports = {
   plugins: [
     {
-      resolve: "gatsby-source-s3",
+      resolve: 'gatsby-source-s3',
       options: {
         aws: {
           accessKeyId: process.env.keyID,
           secretAccessKey: process.env.secretKey,
         },
-        buckets: ["bucket-name"],
+        buckets: ['bucket-name'],
       },
     },
   ],
