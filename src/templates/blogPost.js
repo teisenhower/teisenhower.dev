@@ -23,6 +23,7 @@ export default ({ data }) => {
         <meta name="twitter:site" content="@teisenhower" />
         <meta name="twitter:title" content={post.frontmatter.title} />
         <meta name="twitter:description" content={post.frontmatter.excerpt} />
+        <meta name="twitter:image" content="https://s3.amazonaws.com/teisenhower.dev/readme-assets/T-icon.png" />
       </Helmet>
       <Layout>
         <Nav />
