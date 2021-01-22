@@ -1,5 +1,5 @@
 ---
-title: 'Introduction to usings slots in Vue.js'
+title: 'Introduction to using slots in Vue.js'
 longdate: 'January 22, 2021'
 date: '2021-01-22'
 keywords: 'vue, vuejs, javascript, js, slots'
