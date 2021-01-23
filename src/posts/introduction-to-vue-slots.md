@@ -7,11 +7,11 @@ keywords: 'vue, vuejs, javascript, js, slots'
 
 ## So.. What are slots?
 
-In the simplest definition. Slots are highly dynamic elements used to populate our components with content. They allows our components to be flexible and therefor reusable. The Vue docs refers to slots as _"distribution outlets for content"_.
+In the simplest definition. Slots are highly dynamic elements used to populate our components with content. They allow our components to be flexible and therefore reusable. The Vue docs refers to slots as _"distribution outlets for content"_.
 
 Much like how we can pass data into a component via props, slots are the content equivalent. Slots allow our components to be more agile and less dependent on potentially large amounts of props.
 
-While props and slots are similar in the simplest definition, they give us the ability to pass information to a component, they have a quite a few differences.
+While props and slots are similar in the simplest definition, they give us the ability to pass information to a component, they have quite a few differences.
 
 Let's build a basic card component as an example to demonstrate. If you want to follow along, clone the starting [source code](https://github.com/teisenhower/Vue_slots_demo) from Github.
 
@@ -19,7 +19,7 @@ I also feel that it is important to note that the concept of slots is not just s
 
 ## Defining slots
 
-Just like how we need to defined the props we want our component to accept, we need to defined slots within our component. This is done by simply adding `slot` tags where you want your dynamic content to be placed.
+Just like how we need to define the props we want our component to accept, we need to define slots within our component. This is done by simply adding `slot` tags where you want your dynamic content to be placed.
 
 In our example, we want the `h1` in our Card component to accept dynamic slot content. To do this, add empty `slot` tags inside of the `h1`. That's it, this component is now ready to accept content and place it into the available slot.
 
@@ -53,7 +53,7 @@ Now, when our Card component is rendered, the `<slot></slot>` element will be re
 
 What if you only want the content in this slot to be dynamic some of the time and you're using this component in several places? Do you need to repeat this same default content in every single instance that component is being used? Thankfully not.
 
-Slots can be provided default content that will be displayed in the event that it has not been given alternative content. Vue referes to this is _"Fallback Content"_ and adding it is incredibly simple. Just add what you want the slot's default content to be between your `slot` tags.
+Slots can be provided default content that will be displayed in the event that it has not been given alternative content. Vue refers to this is _"Fallback Content"_ and adding it is incredibly simple. Just add what you want the slot's default content to be between your `slot` tags.
 
 ```html
 // Card.vue
@@ -113,11 +113,11 @@ Thankfully however, turning a slot into a Named Slot is again really simple. We 
 </template>
 ```
 
-Now that our slots are named, we need to update how we are passing our content into the `Card` component. We need a way of telling each piece of content **which** slot it belongs to. To do this, we need to introduce two things. The `template` tag and the Vue `v-slot` directive. 
+Now that our slots are named, we need to update how we are passing our content into the `Card` component. We need a way of telling each piece of content **which** slot it belongs to. To do this, we need to introduce two things. The `template` tag and the Vue `v-slot` directive.
 
-Inside of our `Card` component we need to add a `template` for each slot we want to pass content into. Then, inside those template tags, the content we want to pass. 
+Inside of our `Card` component we need to add a `template` for each slot we want to pass content into. Then, inside those template tags, the content we want to pass.
 
-Each template also needs to be told **which** slot it should use. This is where we use the `v-slot` directive and provide the name of the slot. 
+Each template also needs to be told **which** slot it should use. This is where we use the `v-slot` directive and provide the name of the slot.
 
 ```html
 // App.vue
@@ -131,7 +131,7 @@ Each template also needs to be told **which** slot it should use. This is where 
 </template>
 ```
 
-If you still want one or more of the slots to display its default content, you can still just simply not pass it content and only add templates for the slots you do want to pass content to. 
+If you still want one or more of the slots to display its default content, you can still just simply not pass it content and only add templates for the slots you do want to pass content to.
 
 ```html
 // App.vue
@@ -144,7 +144,7 @@ If you still want one or more of the slots to display its default content, you c
 </template>
 ```
 
-The `v-slot` directive also has a handy shorthand we can use in order to cleanup our code slightly. Simply replaced `v-slot:name` with `#name`. 
+The `v-slot` directive also has a handy shorthand we can use in order to clean up our code slightly. Simply replaced `v-slot:name` with `#name`.
 
 ```html
 // App.vue
@@ -158,7 +158,7 @@ The `v-slot` directive also has a handy shorthand we can use in order to cleanup
 </template>
 ```
 
-This will achieve the same outcome but may look slightly cleaner to some. 
+This will achieve the same outcome but may look slightly cleaner to some.
 
 ## Wrapping up
 
