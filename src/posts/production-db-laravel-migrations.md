@@ -213,3 +213,6 @@ public function up()
 If we run our migrations one final time, we have now changed our height and weight columns to be of type decimal and can now more accurately store information for our Pokémon. 
 
 Just be aware when changing data types on columns. It can have some adverse reactions depending on the type you're changing from and to. In our case, all integers that were previously stored in our height and weight columns will have been converted to decimal point numbers and have `.00` appended to them.
+
+## Continue Learning
+What we've just worked through is meant to simply open the door into how we can safely and confidently interact with our production databases. I encourage you to take these concepts and dive deeper into what [Laravel migrations](https://laravel.com/docs/8.x/migrations) can do.  
