@@ -3,8 +3,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Nav from '../components/nav'
-import Style from './blogPost.module.css'
-import Newsletter from '../components/newsletter'
+import * as styles from './blogPost.module.css'
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -27,23 +26,19 @@ export default ({ data }) => {
       </Helmet>
       <Layout>
         <Nav />
-        <div id={Style.header}>
-          <h1 className={`${Style.blogTitle} white`}>
+        <div id={styles.header}>
+          <h1 className={`${styles.blogTitle} white`}>
             {post.frontmatter.title}
           </h1>
         </div>
-        <h4 className={`${Style.blogDate} orange`}>
+        <h4 className={`${styles.blogDate} orange`}>
           {post.frontmatter.longdate}
         </h4>
         <div
-          id={Style.blogPost}
+          id={styles.blogPost}
           className="white"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
-        <section id={Style.newsletter}>
-          <h3>Subscribe to the newsletter!</h3>
-          <Newsletter />
-        </section>
       </Layout>
     </div>
   )

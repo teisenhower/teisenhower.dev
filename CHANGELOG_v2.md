@@ -1,7 +1,18 @@
 ## Unreleased
 
-- css refactor
-- Fix linting errors and warnings
+- Hopefully some new blog posts.. 
+
+## [3.0.0] - 2023-11-18
+
+It's been a minute friends.. 
+
+### Updated
+
+- bring Gatsby up to latest v5
+- update all neccessary dependencies
+- add `.nvmrc``
+- update components, templates and pages to use import module syntax per [Gatsby upgrade guide](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#css-modules-are-imported-as-es-modules)
+- remove gatsby-plugin-mailchimp and newsletter signup. Maybe one day.. 
 
 ## [2.0.1] - 2020-11-02
 

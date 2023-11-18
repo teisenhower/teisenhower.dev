@@ -76,11 +76,6 @@ pre[class*="language-"] {
   border: unset;
 }
 
-#newsletter h3 {
-  color: white;
-  line-height: 1.2rem;
-  font-size: 1.2rem;
-}
 #submitButton {
   justify-self: end;
   margin: 2.4rem 0 0 0;

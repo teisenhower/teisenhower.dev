@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import style from './icon.module.css'
+import * as styles from './icon.module.css'
 
 const Icon = () => {
   const data = useStaticQuery(graphql`
@@ -40,7 +40,7 @@ const Icon = () => {
             rel="noopener noreferrer"
           >
             <img
-              className={style.socialIcon}
+              className={styles.socialIcon}
               key={file.node.name}
               src={`${file.node.publicURL}`}
               alt={`${file.node.name}-logo`}

@@ -4,7 +4,7 @@ import './index.css'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import BlogItem from '../components/blogItem'
-import Style from './blog.module.css'
+import * as styles from './blog.module.css'
 import Nav from '../components/nav'
 
 const IndexPage = ({ data }) => {
@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => {
       </Helmet>
       <Layout>
         <Nav />
-        <div id={Style.posts}>
+        <div id={styles.posts}>
           {data.allMarkdownRemark.edges.map(({ node }, index) => {
             return (
               <BlogItem
