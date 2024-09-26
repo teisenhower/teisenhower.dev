@@ -11,6 +11,7 @@ module.exports = {
       twitter: 'https://twitter.com/teisenhower',
       github: 'https://github.com/teisenhower',
       stack: 'https://stackoverflow.com/users/11223118/terrence',
+      journal: 'https://journal.teisenhower.dev',
     },
   },
   plugins: [

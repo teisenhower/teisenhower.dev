@@ -11,12 +11,13 @@ const Icon = () => {
             github
             stack
             twitter
+            journal
           }
         }
       }
       allFile(
         filter: { relativeDirectory: { eq: "images/social" } }
-        sort: { fields: [name], order: DESC }
+        sort: { fields: [name], order: ASC }
       ) {
         edges {
           node {
