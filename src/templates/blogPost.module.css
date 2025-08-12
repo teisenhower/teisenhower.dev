@@ -56,9 +56,51 @@ form {
   display: block;
   margin: 2.4rem auto;
 }
-code[class*="language-"] {
+
+#blogPost table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.4rem 0;
   font-size: 1.6rem;
-  font-family: "Fira Code", monospace;
+  color: white;
+  font-weight: 300;
+  table-layout: auto;
+}
+
+#blogPost table th,
+#blogPost table td {
+  padding: 1.2rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: left;
+  vertical-align: middle;
+}
+
+#blogPost table th {
+  background-color: rgba(255, 165, 0, 0.2);
+  color: rgb(var(--orange));
+  font-weight: 600;
+}
+
+#blogPost table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 700px) {
+  #blogPost table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+#blogPost table tbody tr:hover {
+  background-color: rgba(255, 165, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+code[class*='language-'] {
+  font-size: 1.6rem;
+  font-family: 'Fira Code', monospace;
   font-weight: 300;
 }
 #blogPost > ul,
@@ -66,13 +108,13 @@ ol > li {
   font-size: 1.4rem;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   margin: 2.4rem 0;
   background: rgb(var(--darkGrey));
   border-left: 2px solid rgb(var(--orange));
 }
-:not(pre) > code[class*="language-text"] {
+:not(pre) > code[class*='language-text'] {
   border: unset;
 }
 
@@ -96,7 +138,7 @@ pre[class*="language-"] {
     line-height: 2.4rem;
     width: 100%;
   }
-  code[class*="language-"] {
+  code[class*='language-'] {
     font-size: 1.2rem;
   }
   #blogPost p {
